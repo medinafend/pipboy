@@ -1,0 +1,351 @@
+html {
+    min-height: 100vh;
+    border: none;
+    max-width: 100%;
+    padding: none;
+    margin: none;
+}
+
+@media screen and (max-width: 768px) {
+    .soliloquy-container {
+       display: none;
+    }
+   }
+
+@font-face {
+  font-family: pipboy;
+  src: url('./monofonto\ rg.otf');
+}
+
+.nav-link {
+    color: rgb(255, 0, 191);
+}
+
+body {
+    background-color: rgb(32, 0, 61);
+    font-family: pipboy, sans-serif;
+}
+
+body::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: repeating-linear-gradient(0deg, #500057, transparent 1px, transparent 2px);
+    pointer-events: none;
+}
+
+li.nav-item.active::before {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 22px;
+    top: 55px;
+    background: rgba(32, 0, 61);
+}
+
+.nav {
+    --bs-nav-link-hover-color: #fff900;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-color: #7e0054;
+    --bs-nav-tabs-link-hover-border-color: #7e0054 #7e0054 #7e0054;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: rgb(255, 0, 191);
+    border-color: #7e0054;
+}
+
+img {
+    margin: auto;
+    display: block;
+    position: absolute;
+    max-height: 300px;
+    margin-top: 150px;
+    filter: grayscale(1) sepia(300%) hue-rotate(250deg) saturate(40) brightness(1) contrast(1);
+}
+
+.center-image {
+    position: absolute;
+    margin-left: 8vh;
+}
+
+.textcolor {
+    color: rgb(255, 0, 191);
+}
+
+#footer {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: calc(100% - 20px);
+    margin: 10px;
+    font-size: 22px;
+}
+
+#myTab li {
+    font-size: 32px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.secondnavbarstat a {
+    position: relative;
+    left: 840px;
+}
+
+.secondnavbarinv a {
+    position: relative;
+    left: 930px;
+}
+
+.secondnavbardata a {
+    position: relative;
+    left: 850px;
+}
+
+.secondnavbarmap a {
+    position: relative;
+    left: 950px;
+}
+
+.secondnavbarradio a {
+    position: relative;
+    left: 1050px;
+}
+
+.secondnavbar > li:nth-child(2) > a {
+    opacity: .6;
+}
+
+.secondnavbar > li:nth-child(3) > a {
+    opacity: .3;
+}
+
+.level-progress {
+    width: 100%;
+    height: 10px;
+    border: 2px solid;
+}
+
+.level-progress-indicator {
+    width: 70%;
+    height: 6px;
+    background-color: rgb(255, 0, 191);
+}
+
+.armor-progress-indicator {
+    width: 90%;
+    height: 6px;
+    background-color: rgb(255, 0, 191);
+}
+
+.hp-indicator {
+    width: 100%;
+    height: 10px;
+    border: 2px solid;
+}
+
+.hp-left {
+    width: 40%;
+    height: 6px;
+    background-color: rgb(255, 0, 191);
+}
+
+.capacity-left {
+    width: 30%;
+    height: 6px;
+    background-color: rgb(255, 0, 191); 
+}
+
+.ap-indicator {
+    width: 100%;
+    height: 10px;
+    border: 2px solid;
+}
+
+.ap-left {
+    width: 10%;
+    height: 6px;
+    background-color: rgb(255, 0, 191);
+}
+
+.damage-left {
+    width: 65%;
+    height: 6px;
+    background-color: rgb(255, 0, 191);
+}
+
+.style-progress-left {
+    width: 90%;
+    background-color: rgb(255, 0, 191);
+    height: 6px;
+}
+
+.agility-progress-left {
+    width: 70%;
+    background-color: rgb(255, 0, 191);
+    height: 6px;
+}
+
+.flair-progress-left {
+    width: 40%;
+    background-color: rgb(255, 0, 191);
+    height: 6px;
+}
+
+.power-progress-left {
+    width: 80%;
+    background-color: rgb(255, 0, 191);
+    height: 6px;
+}
+
+.luck-progress-left {
+    width: 60%;
+    background-color: rgb(255, 0, 191);
+    height: 6px;
+}
+
+.intelect-progress-left {
+    width: 30%;
+    background-color: rgb(255, 0, 191);
+    height: 6px;
+}
+
+.stat-bar {
+    margin: auto;
+    width: 60px;
+}
+
+#status {
+    max-width: 400px;
+    margin: auto;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.stat-bars > .row {
+    margin-bottom: 150px;
+}
+
+.stat-bars > .middle {
+    margin-left: 700px;
+    margin-right: 700px;
+}
+
+.str {
+    margin-left: 0%;
+    margin: auto;
+    max-width: 100px;
+}
+
+li.nav-item.active.invbar::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 22px;
+    top: 55px;
+    background: rgba(32, 0, 61);
+}
+
+li.nav-item.active.databar::before {
+    content: "";
+    position: absolute;
+    width: 97px;
+    height: 22px;
+    top: 55px;
+    background: rgba(32, 0, 61);
+}
+
+li.nav-item.active.mapbar::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 22px;
+    top: 55px;
+    background: rgba(32, 0, 61);
+}
+
+li.nav-item.active.radiobar::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 22px;
+    top: 55px;
+    background: rgba(32, 0, 61);
+}
+
+a {
+    text-decoration: none;
+}
+
+#status.tab-pane.full {
+    width: 100%;
+    max-width: 100%;
+    left: 0%;
+    margin: 0%;
+}
+
+.item-list {
+    position: relative;
+    margin: auto;
+    list-style: none;
+    padding-left: 20px;
+    left: 750px;
+    margin-top: 20px;
+    top: 150px;
+}
+
+.tap-pane.full {
+    height: calc(100vh - 180px);
+}
+
+.full a  {
+    width: 158px;
+    border-radius: 2px;
+    color: #fff900;
+    display: block;
+}
+
+.item-list li a:hover {
+    text-decoration: none;
+    background: rgb(255, 0, 191, 0.322);
+}
+
+.item-stats {
+    position: absolute;
+    bottom: 450px;
+    right: 750px;
+    color: yellow;
+    width: 200px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.item-stats .row .col-12 {
+    background-color: rgba(255, 0, 191, 0.322);
+    margin-bottom: 2px;
+}
+
+.item-list a.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.item-list li a {
+    padding-left: 25px;
+}
